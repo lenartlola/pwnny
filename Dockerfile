@@ -17,11 +17,16 @@ RUN pacman -Sy --noconfirm \
 	nasm \
 	python-pip \
 	python-pwntools \
-	ropgadget
+	ropgadget \
+	checksec
 
 RUN git clone https://github.com/pwndbg/pwndbg
 
-RUN bash pwndbg/setup.sh
+WORKDIR /pwn/pwndbg
+
+RUN bash setup.sh
+
+WORKDIR /pwn
 
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

@@ -34,6 +34,7 @@ make prune
 - nasm
 - pwntools/pwndbg
 - ropgadget
+- checksec
 
 ## Notes:
 
