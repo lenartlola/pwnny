@@ -18,7 +18,8 @@ RUN pacman -Sy --noconfirm \
 	python-pip \
 	python-pwntools \
 	ropgadget \
-	checksec
+	checksec \
+	lib32-glibc
 
 RUN git clone https://github.com/pwndbg/pwndbg
 
