@@ -14,6 +14,7 @@ RUN pacman -Sy --noconfirm \
 	gcc \
 	zsh \
 	curl \
+	strace \
 	gdb \
 	radare2 \
 	nasm \
