@@ -28,9 +28,7 @@ RUN git clone https://github.com/pwndbg/pwndbg
 
 WORKDIR /pwn/pwndbg
 
-RUN bash setup.sh
-
-WORKDIR /pwn
+#RUN bash setup.sh
 
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
