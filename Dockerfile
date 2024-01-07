@@ -2,7 +2,7 @@ FROM archlinux
 
 LABEL maintainer="lenartlola <lenartlola@proton.me>"
 
-RUN pacman -Syu
+RUN pacman -Syu --noconfirm
 
 WORKDIR /pwn
 
